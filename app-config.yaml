@@ -1,0 +1,26 @@
+app:
+  title: Shyam Backstage App
+  baseUrl: http://localhost:3000
+
+organization:
+  name: American Airlines
+
+backend:
+  database:
+    client: pg
+    connection:
+      host: ${POSTGRES_HOST}
+      port: ${POSTGRES_PORT}
+      user: ${POSTGRES_USER}
+      password: ${POSTGRES_PASSWORD}
+auth:
+  environment: development
+  providers:
+    github:
+      development:
+        clientId: ${GITHUB_CLIENT_ID}
+        clientSecret: ${GITHUB_CLIENT_SECRET}
+integrations:
+  github:
+    - host: github.com
+      token: ${GITHUB_TOKEN}
