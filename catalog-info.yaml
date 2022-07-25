@@ -3,11 +3,14 @@ kind: Component
 metadata:
   name: shyambackstageapp
   description: An example of a Backstage application.
+  tags:
+    - go
+    - website
   # Example for optional annotations
   # annotations:
   #   github.com/project-slug: backstage/backstage
   #   backstage.io/techdocs-ref: dir:.
 spec:
-  type: website
+  type: service
   owner: john@example.com
-  lifecycle: experimental
+  lifecycle: production
